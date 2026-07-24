@@ -1,0 +1,112 @@
+{
+  "reference_image": "samples/golden_reference.png",
+  "test_image": "samples/test_defective.png",
+  "alignment": {
+    "total_keypoints_ref": 1811,
+    "total_keypoints_test": 2186,
+    "matches": 1018,
+    "inliers": 181,
+    "status": "success"
+  },
+  "defects": [
+    {
+      "id": 1,
+      "type": "mousebite",
+      "confidence": 0.85,
+      "bbox": [
+        314,
+        442,
+        13,
+        12
+      ],
+      "area": 81.0,
+      "center": [
+        320,
+        448
+      ]
+    },
+    {
+      "id": 2,
+      "type": "spur",
+      "confidence": 0.82,
+      "bbox": [
+        232,
+        362,
+        18,
+        18
+      ],
+      "area": 237.0,
+      "center": [
+        241,
+        371
+      ]
+    },
+    {
+      "id": 3,
+      "type": "spur",
+      "confidence": 0.82,
+      "bbox": [
+        553,
+        305,
+        12,
+        21
+      ],
+      "area": 66.0,
+      "center": [
+        559,
+        315
+      ]
+    },
+    {
+      "id": 4,
+      "type": "short",
+      "confidence": 0.89,
+      "bbox": [
+        300,
+        155,
+        9,
+        41
+      ],
+      "area": 320.0,
+      "center": [
+        304,
+        175
+      ]
+    },
+    {
+      "id": 5,
+      "type": "open",
+      "confidence": 0.92,
+      "bbox": [
+        230,
+        146,
+        31,
+        9
+      ],
+      "area": 240.0,
+      "center": [
+        245,
+        150
+      ]
+    }
+  ],
+  "evaluation": {
+    "ipc_class": 3,
+    "class_name": "Class 3: High Performance / Aerospace / Medical Electronics",
+    "status": "FAIL",
+    "quality_score": 0.0,
+    "total_defects": 5,
+    "critical_violations": 5,
+    "fail_reasons": [
+      "Total defect count (5) exceeds IPC Class 3 limit (0).",
+      "Contains prohibited defect types for Class 3: open, short, spur, mousebite."
+    ],
+    "defect_summary": {
+      "open": 1,
+      "short": 1,
+      "spur": 2,
+      "mousebite": 1
+    }
+  },
+  "output_visualization": "output/inspection_result.png"
+}
